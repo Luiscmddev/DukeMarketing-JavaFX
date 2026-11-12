@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="762.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="br.dev.luis.dukemarket.javafx.controller.ScrClienteController">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="335.0" prefWidth="578.0">
+         <children>
+            <TableView fx:id="tblProduto" prefHeight="335.0" prefWidth="578.0">
+              <columns>
+                <TableColumn fx:id="tcoId" prefWidth="37.0" text="Id" />
+                <TableColumn fx:id="tcoNome" prefWidth="101.0" text="Nome" />
+                  <TableColumn fx:id="tcoEndereco" prefWidth="101.0" text="Endereço" />
+                  <TableColumn fx:id="tcoCpf" prefWidth="65.0" text="CPF" />
+                  <TableColumn fx:id="tcoDataCadastro" prefWidth="136.0" text="Data Cadastro" />
+                  <TableColumn fx:id="tcoCidade" prefWidth="87.0" text="Cidade" />
+                  <TableColumn fx:id="tcoUf" prefWidth="52.0" text="Uf" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="587.0" layoutY="5.0" prefHeight="335.0" prefWidth="170.0">
+         <children>
+            <Button layoutX="41.0" layoutY="51.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="Novo" />
+            <Button layoutX="41.0" layoutY="122.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="Salvar" />
+            <Button layoutX="41.0" layoutY="196.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="Excluir" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="5.0" layoutY="345.0" prefHeight="140.0" prefWidth="750.0">
+         <children>
+            <TextField fx:id="txtCpf" layoutX="367.0" layoutY="15.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="10.0" layoutY="15.0" prefHeight="25.0" prefWidth="66.0" text="Id">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="50.0" prefHeight="25.0" prefWidth="66.0" text="Nome">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="90.0" text="Endereço">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="301.0" layoutY="15.0" prefHeight="25.0" prefWidth="66.0" text="CPF">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="301.0" layoutY="50.0" prefHeight="25.0" prefWidth="104.0" text="Data Cadastro">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="301.0" layoutY="90.0" prefHeight="25.0" prefWidth="66.0" text="Cidade">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="530.0" layoutY="90.0" prefHeight="25.0" prefWidth="66.0" text="Uf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtId" layoutX="87.0" layoutY="15.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="txtNome" layoutX="87.0" layoutY="50.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="txtEndereco" layoutX="87.0" layoutY="90.0" prefHeight="25.0" prefWidth="200.0" />
+            <DatePicker fx:id="dtpDataCadastro" layoutX="406.0" layoutY="50.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="txtCidade" layoutX="375.0" layoutY="90.0" prefHeight="25.0" prefWidth="139.0" />
+            <TextField fx:id="txtUf" layoutX="573.0" layoutY="90.0" prefHeight="25.0" prefWidth="79.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
